@@ -5,18 +5,18 @@ const Up = async() => {
     const res = await fetch("https://api.abcz.workers.dev/api/bazardor/products")
     const data = await res.json()
      const newData = data.filter( (item) => item.change.dir === "up" )
-    console.log(newData);
+    // console.log(newData);
     
   return (
-    <div className='pb-10'>
+    <div className='pb-10 bg-[#E1E8E1] pt-10'>
         <Container>
             <div className="">
-                <h3 className='pb-10'> <span className= 'text-red-500'>▲</span> আজ দাম বেড়েছে</h3>
+                <h3 className='pb-10 text-[20px] text-black font-bangla font-bold'> <span className= 'text-red-500'>▲</span> আজ দাম বেড়েছে</h3>
                 <div className="flex flex-wrap justify-between gap-y-6">
                     {newData.map((item)=>(
 
                     <div className="w-[32%] ">
-                            <div className="p-4 bg-[#E1E8E1] rounded-[12px]">
+                            <div className="p-4 bg-[#FAFCFA] rounded-[12px]">
                                 <div className="flex gap-x-2 items-center pb-3">
                                     <div className="h-12 rounded-[10px] w-12 flex items-center justify-center bg-[#F0F5F0]">
                                        <span>{item.image}</span>

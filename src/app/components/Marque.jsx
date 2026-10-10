@@ -9,7 +9,8 @@ const Marque = async() => {
   // console.log(maData);
   
   return (
-   
+   <div className="bg-[#E1E8E1]">
+
        <MarqueeText direction="left" duration={30}>
       <div className="flex bg-[#F0F5F0] ">
         {maData.slice(0, 6).map((item,index)=>(
@@ -33,6 +34,7 @@ const Marque = async() => {
         ))}
       </div>
        </MarqueeText>
+   </div>
   )
 }
 

@@ -1,7 +1,8 @@
-import Image from "next/image";
-import Menu from "./components/Menu";
+
 import Banner from "./components/Banner"
 import Up from "./components/Up";
+import Down from "./components/Down";
+import All from "./components/All";
 
 export default   function Home() {
 
@@ -12,6 +13,8 @@ export default   function Home() {
       
       <Banner/>
       <Up/>
+      <Down/>
+      <All/>
     </div>
   );
 }

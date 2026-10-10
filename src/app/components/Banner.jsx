@@ -13,7 +13,7 @@ export default function BazarBanner() {
   }).format(new Date());
 
   return (
-    <div className="my-10">
+    <div className="py-10 bg-[#E1E8E1]">
 
     <Container className=" py-6">
       <div className="relative flex items-center justify-between gap-8 overflow-hidden rounded-3xl border border-gray-200 bg-[#fafcf9] px-6 py-6 sm:px-8 md:py-8">
