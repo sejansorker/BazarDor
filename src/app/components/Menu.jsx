@@ -17,7 +17,7 @@ const Menu = async () => {
         {data.map((item,index)=>(
             <div key={index} className="flex gap-x-2 items-center">
                      <i className=' '>{item.icon}</i>
-                     <Link className='font-bangla font-semibold text-[12px]  text-[#1D271F]' href={`item.slug`}>
+                     <Link className='font-bangla font-semibold text-[12px]  text-[#1D271F]' href={`/category/${item.slug}`}>
                      
                  {item.nameBn}
                      </Link>

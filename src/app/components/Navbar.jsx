@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from './Container'
 import Image from 'next/image';
+import Link from 'next/link';
 const Navbar = () => {
   return (
     <div className="bg-[#F3FBF4] py-[14px]">
@@ -9,12 +10,15 @@ const Navbar = () => {
   <div className="flex-1">
     <div className="flex">
         <div className="bg-[#05893E] h-10 w-10  rounded-[5px] flex items-center justify-center">
+          <Link href="/">
+          
    <Image src="/logo.png"
               height={28}
               width={18}
               alt="logo"
               style={{ width: "auto", height: "auto" }}
               />   
+          </Link>
     </div>
     <div className="pl-2">
         <h4 className='font-bangla font-bold text-[20px] '>বাজার দর</h4>
