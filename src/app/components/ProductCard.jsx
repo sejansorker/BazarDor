@@ -1,16 +1,19 @@
 
+import Link from 'next/link'
 import React from 'react'
 
 const ProductCard = ({ item }) => {
+  
+  
   const unitName = {
     kg: "কেজি",
     litre: "লিটার",
     dozen: "ডজন",
     piece: "পিস",
   }
-
   return (
     <div className="w-[32%]">
+    <Link href={`/details/${item.id}`}>
       <div className="p-4 bg-[#FAFCFA] rounded-[12px]">
         <div className="flex gap-x-2 items-center pb-3">
           <div className="h-12 rounded-[10px] w-12 flex items-center justify-center bg-[#F0F5F0]">
@@ -46,6 +49,7 @@ const ProductCard = ({ item }) => {
           </div>
         </div>
       </div>
+    </Link>
     </div>
   )
 }
