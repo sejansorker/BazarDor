@@ -1,19 +1,3 @@
-// import React from 'react'
-
-// const page = async({params}) => {
-//    const {id} = await params
-//    const res = await fetch(`https://api.abcz.workers.dev/api/bazardor/products/${id}`)
-//    const data = await res.json()
-//    console.log(data);
-   
-//   return (
-//     <div>page</div>
-//   )
-// }
-
-// export default page
-
-
 import React from "react"
 import Container from "@/app/components/Container"
 
@@ -73,7 +57,6 @@ const Page = async ({ params }) => {
   return (
     <div className="min-h-screen bg-[#EEF4EF] py-8">
       <Container>
-        {/* Breadcrumb */}
         <div className="mb-5 flex flex-wrap items-center gap-2 font-bangla text-sm text-gray-500">
           <span>হোম</span>
           <span>/</span>
@@ -83,8 +66,6 @@ const Page = async ({ params }) => {
             {data.nameBn}
           </span>
         </div>
-
-        {/* Product Header */}
         <div className="mb-5 flex flex-col justify-between gap-5 rounded-[20px] bg-[#FAFCFA] p-5 sm:flex-row sm:items-center sm:p-7">
           <div className="flex items-center gap-4">
             <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-[#EEF4EF] text-4xl">
@@ -106,8 +87,6 @@ const Page = async ({ params }) => {
               </p>
             </div>
           </div>
-
-          {/* Today's Price */}
           <div className="min-w-[130px] rounded-2xl bg-[#EEF4EF] px-5 py-4 text-center">
             <p className="font-bangla text-xs text-gray-500">
               আজকের বাজারদর
@@ -133,14 +112,10 @@ const Page = async ({ params }) => {
             </p>
           </div>
         </div>
-
-        {/* Main Details Card */}
         <div className="rounded-[20px] bg-[#FAFCFA] p-5 sm:p-7">
           <h2 className="mb-4 font-bangla text-lg font-bold text-[#1D271F]">
             দামের সারসংক্ষেপ
           </h2>
-
-          {/* Summary Cards */}
           <div className="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
             <div className="rounded-xl border border-[#E1E8E1] p-4">
               <p className="font-bangla text-sm text-gray-500">
@@ -184,8 +159,6 @@ const Page = async ({ params }) => {
               </p>
             </div>
           </div>
-
-          {/* Market Price Table */}
           <h2 className="mb-4 font-bangla text-lg font-bold text-[#1D271F]">
             বাজারভিত্তিক আজকের দাম
           </h2>
@@ -264,8 +237,6 @@ const Page = async ({ params }) => {
             </table>
           </div>
         </div>
-
-        {/* Footer Note */}
         <div className="py-6 text-center">
           <p className="font-bangla text-xs text-gray-500">
             বাজার দর — বাংলাদেশের বিভিন্ন বাজারের দামের তথ্য।

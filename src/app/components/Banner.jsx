@@ -17,7 +17,7 @@ export default function BazarBanner() {
 
     <Container className=" py-6">
       <div className="relative flex items-center justify-between gap-8 overflow-hidden rounded-3xl border border-gray-200 bg-[#fafcf9] px-6 py-6 sm:px-8 md:py-8">
-        {/* left: text */}
+ 
         <div className="w-2/3">
           <span className="inline-block rounded-full bg-green-100 px-5 py-2 text-xs font-semibold text-green-800">
             {today}

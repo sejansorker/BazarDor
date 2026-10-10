@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import MarqueeText from "react-marquee-text"
 import "react-marquee-text/dist/styles.css"
 
@@ -14,7 +15,9 @@ const Marque = async() => {
        <MarqueeText direction="left" duration={30}>
       <div className="flex bg-[#F0F5F0] ">
         {maData.slice(0, 6).map((item,index)=>(
-          <div key={index} className="flex items-center px-4">
+          <Link key={index} href={`/details/${item.id}`}>
+          
+          <div  className="flex items-center px-4">
             <span className="text-2xl">{item.image}</span>
             <p className="py-2  border-2 border-[#F0F5F0]">{item.nameBn}</p>
             <div className="flex items-center gap-x-1">
@@ -31,6 +34,7 @@ const Marque = async() => {
 )}
           <p>{item.change.pct.toLocaleString("bn-BD")}%</p>
           </div>
+          </Link>
         ))}
       </div>
        </MarqueeText>

@@ -9,8 +9,8 @@ const Navbar = () => {
         <div className="navbar">
   <div className="flex-1">
     <div className="flex">
-        <div className="bg-[#05893E] h-10 w-10  rounded-[5px] flex items-center justify-center">
           <Link href="/">
+        <div className="bg-[#05893E] h-10 w-10  rounded-[5px] flex items-center justify-center">
           
    <Image src="/logo.png"
               height={28}
@@ -18,8 +18,8 @@ const Navbar = () => {
               alt="logo"
               style={{ width: "auto", height: "auto" }}
               />   
-          </Link>
     </div>
+          </Link>
     <div className="pl-2">
         <h4 className='font-bangla font-bold text-[20px] '>বাজার দর</h4>
         <p className='font-bangla font-normal text-[12px] '>মঙ্গলবার, ৬ অক্টোবর, ২০২৬</p>
