@@ -4,7 +4,7 @@ import MarqueeText from "react-marquee-text"
 import "react-marquee-text/dist/styles.css"
 
 const Marque = async() => {
-  const res = await fetch("https://api.abcz.workers.dev/api/bazardor/products")
+  const res = await fetch("https://openapi.programming-hero.com/api/bazardor/products")
   const maData = await res.json()
   
   // console.log(maData);
@@ -16,7 +16,6 @@ const Marque = async() => {
       <div className="flex bg-[#F0F5F0] ">
         {maData.slice(0, 6).map((item,index)=>(
           <Link key={index} href={`/details/${item.id}`}>
-          
           <div  className="flex items-center px-4">
             <span className="text-2xl">{item.image}</span>
             <p className="py-2  border-2 border-[#F0F5F0]">{item.nameBn}</p>

@@ -5,13 +5,15 @@ const Category = async ({ params }) => {
   const { cateId } = await params
 
   const categoryRes = await fetch(
-    `https://api.abcz.workers.dev/api/bazardor/categories/${cateId}`
+    `https://openapi.programming-hero.com/api/bazardor/categories/${cateId}`
   )
+  
   const categoryData = await categoryRes.json()
 
   const productRes = await fetch(
-    `https://api.abcz.workers.dev/api/bazardor/products?category=${cateId}`
+    `https://openapi.programming-hero.com/api/bazardor/products?category=${cateId}`
   )
+  
   const productData = await productRes.json()
   return (
     <div className="bg-[#E1E8E1]">
