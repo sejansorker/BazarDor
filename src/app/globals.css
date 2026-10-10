@@ -1,3 +1,9 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
-
+body {
+  font-family: var(--font-bangla), sans-serif;
+}
+@theme {
+  --font-bangla: "Hind Siliguri", sans-serif;
+}

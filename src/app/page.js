@@ -1,9 +1,17 @@
 import Image from "next/image";
+import Menu from "./components/Menu";
+import Banner from "./components/Banner"
+import Up from "./components/Up";
 
-export default function Home() {
+export default   function Home() {
+
+  
+  
   return (
     <div>
-      Home Page
+      
+      <Banner/>
+      <Up/>
     </div>
   );
 }
