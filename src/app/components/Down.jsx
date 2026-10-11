@@ -1,3 +1,4 @@
+
 import Container from './Container'
 import ProductCard from './ProductCard'
 
@@ -8,9 +9,12 @@ const Down = async () => {
 
   const data = await res.json()
 
-  const newData = data.filter(
-    (item) => item.change?.dir === "down"
-  )
+  const getChange = (item) => Math.abs(Number(item.change?.amount) || 0)
+
+  const newData = data
+    .filter((item) => item.change?.dir === "down")
+    .sort((a, b) => getChange(b) - getChange(a)) 
+    .slice(0, 6) 
 
   return (
     <div className="pb-10 bg-[#E1E8E1]">
@@ -30,4 +34,3 @@ const Down = async () => {
 }
 
 export default Down
-

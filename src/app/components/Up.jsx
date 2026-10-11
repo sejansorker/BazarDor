@@ -1,5 +1,3 @@
-
-
 import Container from './Container'
 import ProductCard from './ProductCard'
 
@@ -10,10 +8,16 @@ const Up = async () => {
 
   const data = await res.json()
 
-  const newData = data.filter(
-    (item) => item.change?.dir === "up"
-  )
+  // const newData = data.filter(
+  //   (item) => item.change?.dir === "up"
+  // )
 
+  const newData = data
+  .filter((item) => item.change?.dir === "up")
+  .sort((a, b) => b.change.pct - a.change.pct)
+  .slice(0, 6)
+
+  
   return (
     <div className="pb-10 bg-[#E1E8E1] pt-10">
       <Container>
