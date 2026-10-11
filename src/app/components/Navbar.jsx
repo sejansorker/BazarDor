@@ -30,7 +30,6 @@ const Navbar = () => {
     <div className="bg-[#F3FBF4] py-2.5 sm:py-[14px]">
       <Container>
         <div className="navbar min-h-0 gap-2 p-0">
-          {/* Left: logo + title + date */}
           <div className="min-w-0 flex-1">
             <div className="flex items-center">
               <Link href="/" className="shrink-0">
