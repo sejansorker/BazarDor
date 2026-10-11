@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Marque from "./components/Marque";
 import Menu from "./components/Menu";
-
+import { Toaster } from "react-hot-toast"
 const Bangla = Hind_Siliguri({
 subsets: ["bengali", "latin"],
 variable: "--font-bangla",
@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
         <Menu/>
         <Marque/>
         <main >{children}</main>
+         <Toaster position="top-center" />
         <Footer />
       </body>
     </html>
