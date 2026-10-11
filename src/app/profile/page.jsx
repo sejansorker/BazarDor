@@ -15,18 +15,10 @@ const ProfilePage = () => {
       }
     const {data: session} = authClient.useSession()
       const user = session?.user
-      const handleOut = async () => {
-    await authClient.signOut({
-      fetchOptions: {
-        onSuccess: () => {
-          router.push("/")
-          router.refresh()
-        },
-      },
-    })
-  }
-      
-
+     const handleOut = async () => {
+         await authClient.signOut() 
+         
+       }
   return (
     <div className="min-h-screen bg-[#F0F4EF] py-10">
       <Container>

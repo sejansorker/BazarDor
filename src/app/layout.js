@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Marque from "./components/Marque";
 import Menu from "./components/Menu";
+import { Suspense } from "react"
+import MenuSkeleton from "./components/MenuSkeleton"
 import { Toaster } from "react-hot-toast"
 const Bangla = Hind_Siliguri({
 subsets: ["bengali", "latin"],
@@ -23,7 +25,9 @@ export default function RootLayout({ children }) {
       <body suppressHydrationWarning
   className="min-h-screen flex flex-col">
         <Navbar />
-        <Menu/>
+       <Suspense fallback={<MenuSkeleton />}>
+  <Menu />
+</Suspense>
         <Marque/>
         <main >{children}</main>
          <Toaster position="top-center" />

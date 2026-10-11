@@ -33,7 +33,7 @@ export default function BazarBanner() {
           </p>
 
           <Link
-            href="/products"
+            href="#All"
             className="mt-6 inline-block rounded-lg bg-green-700 px-5 py-2.5 text-sm font-semibold text-white shadow-md shadow-green-900/30 transition hover:bg-green-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600 focus-visible:ring-offset-2"
           >
             সব পণ্য দেখুন

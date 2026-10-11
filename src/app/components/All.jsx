@@ -10,7 +10,7 @@ const AllProducts = async () => {
   const data = await res.json()
 
   return (
-    <div className="pb-10 bg-[#E1E8E1]">
+    <div id="All" className="pb-10 bg-[#E1E8E1]">
       <Container>
         <h3 className="pb-10 text-[20px] text-black font-bangla font-bold">
           সব পণ্য
