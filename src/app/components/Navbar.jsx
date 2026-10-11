@@ -33,7 +33,7 @@ const Navbar = () => {
           <div className="min-w-0 flex-1">
             <div className="flex items-center">
               <Link href="/" className="shrink-0">
-                <div className="bg-[#05893E] h-9 w-9 sm:h-10 sm:w-10 rounded-[5px] flex items-center justify-center">
+                <div className="bg-[#05893E]  h-9 w-9 sm:h-10 sm:w-10 rounded-[5px] flex items-center justify-center">
                   <Image
                     src="/logo.png"
                     height={28}
@@ -44,7 +44,7 @@ const Navbar = () => {
                 </div>
               </Link>
               <div className="min-w-0 pl-2">
-                <h4 className="font-bangla font-bold text-[16px] sm:text-[20px] leading-tight">
+                <h4 className="font-bangla font-bold text-[17px] sm:text-[20px] leading-tight">
                   বাজার দর
                 </h4>
                 <BanglaDate className="font-bangla font-normal text-[10px] sm:text-[12px] truncate" />
